@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Countries&amp;Capitals Quiz</string>
+    <string name="world_map">World map</string>
+    <string name="description_text">Complete the quiz and press CHECK button to get your score!</string>
+    <string name="good_luck">Good Luck!</string>
+    <string name="question1">Which is the capital of %s?</string>
+    <string name="q1_rdb0">%s</string>
+    <string name="q1_rdb1">%s</string>
+    <string name="q1_rdb2">%s</string>
+    <string name="question2">What capital is this?</string>
+    <string name="q2_image_description">Capital to guess</string>
+    <string name="q2_answer0">%s</string>
+    <string name="q2_answer1">%s</string>
+    <string name="q2_answer2">%s</string>
+    <string name="q2_answer3">%s</string>
+    <string name="question3">%s is the capital of:</string>
+    <string name="edit_text_q3">Write your answer here</string>
+    <string name="question4">Mark capitals in %s:</string>
+    <string name="q4_ckb0">%s</string>
+    <string name="q4_ckb1">%s</string>
+    <string name="q4_ckb2">%s</string>
+    <string name="question5">What is the flag of %s?</string>
+    <string name="check">CHECK</string>
+    <string name="view_answers">VIEW ANSWERS</string>
+    <string name="correctAnswer1">Question 1: %s\n</string>
+    <string name="correctAnswer2">Question 2: %s\n</string>
+    <string name="correctAnswer3">Question 3: %s\n</string>
+    <string name="correctAnswer4">Question 4: %1$s and %2$s\n</string>
+    <string name="new_quiz">NEW QUIZ</string>
+    <string name="final_score">Your final score is %d of 4. You can try again or VIEW ANSWERS and start a NEW QUIZ</string>
+    <string name="all_correct">Congratulations! You\'ve got all answers right!</string>
+    <string name="answer_all">You must answer all the questions! Please complete the Quiz to continue.</string>
+    <string name="error_response">Error: </string>
+    <string name="error_on_failure">Something Went Wrong! Unable to conect.</string>
+</resources>

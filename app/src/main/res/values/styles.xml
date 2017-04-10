@@ -1,0 +1,227 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Common elements for layout width and height -->
+    <style name="Child1" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Common elements for layout width and height -->
+    <style name="Child2" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Style for main LinearLayout-->
+    <style name="MainLinearLayout" parent="Child1">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Common elements for Intro text - Description text and Good luck -->
+    <style name="IntroText" parent="Child1">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/padding</item>
+        <item name="android:paddingRight">@dimen/padding</item>
+        <item name="android:paddingTop">@dimen/padding</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for MapImage -->
+    <style name="MapImage" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/images_height</item>
+    </style>
+
+    <!-- Style for Intro text - Description -->
+    <style name="DescriptionTextView" parent="IntroText">
+        <item name="android:textSize">@dimen/intro_text_size</item>
+    </style>
+
+    <!-- Style for Intro text - Good Luck -->
+    <style name="GoodLuck" parent="IntroText">
+        <item name="android:textSize">@dimen/good_luck_text_size</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Style for View - lines -->
+    <style name="ViewLines" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/lines_height</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:background">@color/colorAccent2</item>
+    </style>
+
+    <!-- Style for questions TextViews -->
+    <style name="QuestionsText" parent="Child2">
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <!-- Style for radio group -->
+    <style name="RadioGroup" parent="Child1">
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <!-- Style for radio buttons -->
+    <style name="RadioButtons" parent="Child1">
+        <item name="android:layout_marginLeft">@dimen/answers_horizontal_margin</item>
+        <item name="android:textSize">@dimen/answers_text_size</item>
+    </style>
+
+    <!-- Style for image capital in question 2 -->
+    <style name="ImageQuestion2" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/images_height</item>
+        <item name="android:layout_marginLeft">@dimen/answers_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/answers_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Style for horizontal LinearLayout containing the two columns with clickable Views in question 2 -->
+
+    <style name="HorLinearLayout" parent="Child1">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Common Style for clickable TextViews and FINAL Buttons -->
+    <style name="Child4" parent="AppTheme">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Common Style for clickable Textviews in question 2 -->
+    <style name="ClickableTextViews" parent="Child4">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/answers_text_size</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/small_padding</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- Common Style for Left clickable Textviews in question 2 -->
+    <style name="LeftClickableTextViews" parent="ClickableTextViews">
+        <item name="android:layout_marginLeft">@dimen/answers_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/small_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+    </style>
+
+    <!-- Common Style for Right clickable Textviews in question 2 -->
+    <style name="RightClickableTextViews" parent="ClickableTextViews">
+        <item name="android:layout_marginRight">@dimen/answers_horizontal_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+    </style>
+
+    <!-- Style for down left clickable Textview in question 2 -->
+    <style name="DownLeftClickableTextView" parent="LeftClickableTextViews">
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <!-- Style for down right clickable Textview in question 2 -->
+    <style name="DownRightClickableTextView" parent="RightClickableTextViews">
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+
+    <!-- Common Style for EditTextView in question 3 and Checkboxes in question 4 -->
+    <style name="Child3" parent="Child2">
+        <item name="android:layout_marginLeft">@dimen/answers_horizontal_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:textSize">@dimen/answers_text_size</item>
+    </style>
+
+    <!-- Style for EditTextView in question 3 -->
+    <style name="EditTextViewQ3" parent="Child3">
+        <item name="android:textColor">@color/colorAccent2</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <!-- Style for Checkboxes in question 4 -->
+    <style name="CheckboxesQ4" parent="Child3">
+        <item name="android:paddingLeft">@dimen/small_padding</item>
+        <item name="android:layout_marginLeft">@dimen/answers_horizontal_margin</item>
+    </style>
+
+    <!-- Style for upper Checkbox in question 4 -->
+    <style name="UpperCheckboxQ4" parent="CheckboxesQ4">
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <!-- Style for down Checkbox in question 4 -->
+    <style name="DownCheckboxQ4" parent="CheckboxesQ4">
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <!-- Style for vertical LinearLayouts in question 5 -->
+    <style name="VerticalLinearLayouts" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Common Style for clickable ImageViews in question 5 -->
+    <style name="ClickableImageViews" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/small_images_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <!-- Common Style for left clickable ImageViews in question 5 -->
+    <style name="LeftClickableImageViews" parent="ClickableImageViews">
+        <item name="android:layout_marginLeft">@dimen/answers_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/small_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+    </style>
+
+    <!-- Common Style for right clickable ImageViews on Right column in question 5 -->
+    <style name="RightClickableImageViews" parent="ClickableImageViews">
+        <item name="android:layout_marginRight">@dimen/answers_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+    </style>
+
+    <!-- Style for left down clickable ImageView in question 2 -->
+    <style name="LeftDownClickableImageView" parent="LeftClickableImageViews">
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <!-- Style for right down clickable ImageView in question 2 -->
+    <style name="RightDownClickableImageView" parent="RightClickableImageViews">
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <!-- Style for FINAL Buttons -->
+    <style name="FinalButtons" parent="Child4">
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:textSize">@dimen/buttons_text_size</item>
+        <item name="android:padding">@dimen/small_padding</item>
+    </style>
+
+    <!-- Style for CHECK Button -->
+    <style name="CheckButton" parent="FinalButtons">
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <!-- Style for NEW QUIZ Button -->
+    <style name="NewQuizButton" parent="FinalButtons">
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+</resources>

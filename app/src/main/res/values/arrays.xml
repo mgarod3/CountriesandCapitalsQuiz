@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="capital_images">
+        <item>@drawable/london</item>
+        <item>@drawable/rome</item>
+        <item>@drawable/paris</item>
+        <item>@drawable/madrid</item>
+        <item>@drawable/washington</item>
+        <item>@drawable/stockholm</item>
+        <item>@drawable/bogota</item>
+        <item>@drawable/ottawa</item>
+        <item>@drawable/dakar</item>
+        <item>@drawable/tehran</item>
+        <item>@drawable/tegucigalpa</item>
+        <item>@drawable/baku</item>
+        <item>@drawable/la_habana</item>
+    </array>
+</resources>

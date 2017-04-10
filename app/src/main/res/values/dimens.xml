@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margins -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="answers_horizontal_margin">32dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+
+    <!-- padding -->
+    <dimen name="padding">16dp</dimen>
+    <dimen name="padding_answers_left">16dp</dimen>
+    <dimen name="small_padding">12dp</dimen>
+
+    <!-- Images height -->
+    <dimen name="images_height">200dp</dimen>
+    <dimen name="small_images_height">100dp</dimen>
+
+    <!-- Lines height -->
+    <dimen name="lines_height">1dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="intro_text_size">18sp</dimen>
+    <dimen name="good_luck_text_size">30sp</dimen>
+    <dimen name="question_text_size">22sp</dimen>
+    <dimen name="answers_text_size">18sp</dimen>
+    <dimen name="buttons_text_size">14sp</dimen>
+</resources>
